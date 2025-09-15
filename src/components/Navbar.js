@@ -30,7 +30,7 @@ function Navbar() {
           <li><a href="/khushi-appannavar-portfolio1/#publications" onClick={toggleSidebar}>Publications</a></li>
           <li><a href="/khushi-appannavar-portfolio1/#certifications" onClick={toggleSidebar}>Certifications</a></li>
           <li><a href="/khushi-appannavar-portfolio1/#skills" onClick={toggleSidebar}>Skills</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#services" onClick={toggleSidebar}>Services</a></li>
+          {/* <li><a href="/khushi-appannavar-portfolio1/#services" onClick={toggleSidebar}>Services</a></li> */}
           <li><a href="/khushi-appannavar-portfolio1/#education" onClick={toggleSidebar}>Education</a></li>
           <li><a href="/khushi-appannavar-portfolio1/#contact" onClick={toggleSidebar}>Contact Me</a></li>
           <li><Link to="/beyond" onClick={toggleSidebar}>Beyond</Link></li>

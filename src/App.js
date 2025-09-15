@@ -61,9 +61,9 @@ function MainContent({ handlePopupOpen, handlePopupClose }) {
       <section id="skills" className="fade-in">
         <Skills />
       </section>
-      <section id="services" className="fade-in">
+      {/* <section id="services" className="fade-in">
         <Services onPopupOpen={handlePopupOpen} onPopupClose={handlePopupClose} />
-      </section>
+      </section> */}
       <section id="education" className="fade-in">
         <Education />
       </section>
