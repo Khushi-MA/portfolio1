@@ -6,6 +6,7 @@
 .pnp.js
 *.mp4
 /spare
+/refercodes
 
 # testing
 /coverage

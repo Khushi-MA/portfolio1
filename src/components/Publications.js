@@ -64,12 +64,11 @@ const publications = [
 			{
 				label: 'LinkedIn Post',
 				url: 'https://www.linkedin.com/posts/khushi-appannavar_research-i3d-dtw-activity-7339346136949788672-tcIe?utm_source=share&utm_medium=member_desktop&rcm=ACoAADnqyrkBwKGBo_j7B5Ge0YR1b7o-8buion0'
+			},
+			{
+				label: 'IEEE page',
+				url: 'https://doi.org/10.1109/INCET64471.2025.11139946'
 			}
-			// ,
-			// {
-			// 	label: 'IEEE page',
-			// 	url: 'https://ieeexplore.ieee.org/document/???'
-			// }
 		]
 	}
 ];
