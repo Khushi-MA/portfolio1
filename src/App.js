@@ -85,7 +85,7 @@ function App() {
   const handlePopupClose = () => setIsPopupActive(false);
 
   return (
-    <Router basename="/khushi-appannavar-portfolio1">
+    <Router basename="/portfolio1">
       <div className={`App ${isPopupActive ? 'popup-active' : ''}`}>
         <Helmet>
           <link rel="icon" type="image/png" href="logo/logo.png" />

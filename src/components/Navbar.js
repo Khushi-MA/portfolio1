@@ -23,18 +23,18 @@ function Navbar() {
       </nav>
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <ul className="sidebar-links">
-          <li><a href="/khushi-appannavar-portfolio1/#home" onClick={toggleSidebar}>Home</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#about" onClick={toggleSidebar}>About</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#projects" onClick={toggleSidebar}>Projects</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#experience" onClick={toggleSidebar}>Experience</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#publications" onClick={toggleSidebar}>Publications</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#certifications" onClick={toggleSidebar}>Certifications</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#skills" onClick={toggleSidebar}>Skills</a></li>
-          {/* <li><a href="/khushi-appannavar-portfolio1/#services" onClick={toggleSidebar}>Services</a></li> */}
-          <li><a href="/khushi-appannavar-portfolio1/#education" onClick={toggleSidebar}>Education</a></li>
-          <li><a href="/khushi-appannavar-portfolio1/#contact" onClick={toggleSidebar}>Contact Me</a></li>
+          <li><a href="/portfolio1/#home" onClick={toggleSidebar}>Home</a></li>
+          <li><a href="/portfolio1/#about" onClick={toggleSidebar}>About</a></li>
+          <li><a href="/portfolio1/#projects" onClick={toggleSidebar}>Projects</a></li>
+          <li><a href="/portfolio1/#experience" onClick={toggleSidebar}>Experience</a></li>
+          <li><a href="/portfolio1/#publications" onClick={toggleSidebar}>Publications</a></li>
+          <li><a href="/portfolio1/#certifications" onClick={toggleSidebar}>Certifications</a></li>
+          <li><a href="/portfolio1/#skills" onClick={toggleSidebar}>Skills</a></li>
+          {/* <li><a href="/portfolio1/#services" onClick={toggleSidebar}>Services</a></li> */}
+          <li><a href="/portfolio1/#education" onClick={toggleSidebar}>Education</a></li>
+          <li><a href="/portfolio1/#contact" onClick={toggleSidebar}>Contact Me</a></li>
           <li><Link to="/beyond" onClick={toggleSidebar}>Beyond</Link></li>
-          <li><a href="/khushi-appannavar-portfolio1/beyond#books" onClick={toggleSidebar}>Books</a></li>
+          <li><a href="/portfolio1/beyond#books" onClick={toggleSidebar}>Books</a></li>
         </ul>
       </div>
     </>

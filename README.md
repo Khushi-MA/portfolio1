@@ -70,6 +70,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-<!-- 
-git add .; git commit -m "updates"; git push origin main; npm run build; npm run deploy
- -->
+# Commands
+
+git add .; git commit -m "updates"; git push origin main; npm run build; npm run deploy;
