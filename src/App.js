@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Projects from './components/Projects';
@@ -13,6 +13,7 @@ import Publications from './components/Publications';
 import Skills from './components/Skills';
 import Services from './components/Services';
 import Beyond from './components/Beyond';
+import Makeinbvb from './components/Makeinbvb';
 import './App.css';
 import { Helmet } from "react-helmet";
 import HoverTipBox from './components/HoverTipBox';
@@ -43,34 +44,31 @@ function MainContent({ handlePopupOpen, handlePopupClose }) {
       <section id="home">
         <Home />
       </section>
-      <section id="about" className="fade-in">
+      <section id="about" className="section fade-in">
         <About />
       </section>
-      <section id="projects" className="fade-in">
+      <section id="projects" className="section fade-in">
         <Projects onPopupOpen={handlePopupOpen} onPopupClose={handlePopupClose} />
       </section>
-      <section id="experience" className="fade-in">
+      <section id="experience" className="section fade-in">
         <Experience />
       </section>
-      <section id="publications" className="fade-in">
+      <section id="publications" className="section fade-in">
         <Publications onPopupOpen={handlePopupOpen} onPopupClose={handlePopupClose} />
       </section>
-      <section id="certifications" className="fade-in">
+      <section id="certifications" className="section fade-in">
         <Certifications />
       </section>
-      <section id="skills" className="fade-in">
+      <section id="skills" className="section fade-in">
         <Skills />
       </section>
-      {/* <section id="services" className="fade-in">
-        <Services onPopupOpen={handlePopupOpen} onPopupClose={handlePopupClose} />
-      </section> */}
-      <section id="education" className="fade-in">
+      <section id="education" className="section fade-in">
         <Education />
       </section>
-      <section id="contact" className="fade-in">
+      <section id="contact" className="section fade-in">
         <Contact />
       </section>
-      <section id='socials' className="fade-in">
+      <section id='socials'>
         <Socials />
       </section>
       <HoverTipBox />
@@ -85,7 +83,7 @@ function App() {
   const handlePopupClose = () => setIsPopupActive(false);
 
   return (
-    <Router basename="/portfolio1">
+    <Router>
       <div className={`App ${isPopupActive ? 'popup-active' : ''}`}>
         <Helmet>
           <link rel="icon" type="image/png" href="logo/logo.png" />
@@ -94,6 +92,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainContent handlePopupOpen={handlePopupOpen} handlePopupClose={handlePopupClose} />} />
           <Route path="/beyond" element={<Beyond />} />
+          <Route path="/makeinbvb" element={<Makeinbvb />} />
           <Route path="*" element={<MainContent handlePopupOpen={handlePopupOpen} handlePopupClose={handlePopupClose} />} />
         </Routes>
       </div>

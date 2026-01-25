@@ -58,6 +58,10 @@ function Home() {
     const handleScroll = () => {
       const animationBox = document.querySelector('.animation');
       const homeSection = document.getElementById('home');
+      
+      // Add null checks
+      if (!animationBox || !homeSection) return;
+      
       const homeBounds = homeSection.getBoundingClientRect();
 
       if (homeBounds.top < window.innerHeight * 0.75 && homeBounds.bottom > window.innerHeight * 0.70) {

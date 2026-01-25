@@ -50,6 +50,20 @@ const bookRecommendations = [
     description: '',
     image: 'https://m.media-amazon.com/images/I/61mh6nw63+L._SY522_.jpg',
     link: ''
+  },
+  {
+    title: 'Charlie and the Chocolate Factory',
+    author: 'Roald Dahl',
+    description: '',
+    image: 'https://m.media-amazon.com/images/I/81Dp5Of3zeL._SY522_.jpg',
+    link: ''
+  },
+  {
+    title: 'Book Thief',
+    author: 'Markus Zusak',
+    description: '',
+    image: 'https://m.media-amazon.com/images/I/91JGwQlnu7L._SY522_.jpg',
+    link: ''
   }
 ];
 
@@ -64,9 +78,9 @@ function BooksSection() {
             <div className="book-content">
               <img src={book.image} alt={book.title} className="book-image" />
               <div className="book-details">
-                <h3 className="book-title">{book.title}</h3>
-                <h4 className="book-author">by {book.author}</h4>
-                <p className="book-desc">{book.description}</p>
+                <h4 className="book-title">{book.title}</h4>
+                <p className="book-author">by {book.author}</p>
+                {/* <p className="book-desc">{book.description}</p> */}
                 {/* <a href={book.link} target="_blank" rel="noopener noreferrer" className="book-link">Learn More</a> */}
               </div>
             </div>

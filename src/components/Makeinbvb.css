@@ -1,0 +1,55 @@
+.makeinbvb-page {
+  padding: 2rem;
+  text-align: justify;
+
+  line-height: 1.5;
+}
+
+
+
+.makeinbvb-card {
+    display: flex;
+
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: var(--unit-border);
+  box-shadow: var(--unit-shadow-normal);
+  background: var(--unit-background);
+  backdrop-filter: blur(10px);
+  transform: translateY(0) scale(1);
+}
+
+.makeinbvb-card:hover {
+    transform: scale(1.02);
+}
+
+.card-photo {
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    flex: 2;
+}
+
+@media (max-width: 600px) {
+    .makeinbvb-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-photo {
+        width: 100%;
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

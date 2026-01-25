@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Beyond.css';
+import Socials from './Socials';
 import BooksSection from './Books';
+import HoverTipBox from './HoverTipBox';
 
 function Beyond() {
-  const [isPopupActive, setIsPopupActive] = useState(false);
-  const handlePopupOpen = () => setIsPopupActive(true);
-  const handlePopupClose = () => setIsPopupActive(false);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -26,10 +24,14 @@ function Beyond() {
   }, []);
 
   return (
-    <div className={`beyond-page${isPopupActive ? ' popup-active' : ''}`}>
-      <section id="books" className="fade-in">
+    <div className="beyond-page">
+      <section id="books" className="section fade-in">
         <BooksSection />
       </section>
+      <section id='socials'>
+        <Socials />
+      </section>
+      <HoverTipBox />
     </div>
   );
 }

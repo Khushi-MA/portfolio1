@@ -108,13 +108,6 @@ function Certifications() {
   const [isPaused, setIsPaused] = useState(false);
   const [showList, setShowList] = useState(false);
 
-  // Smooth scroll by amount
-  const scrollByAmount = (amount) => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: amount, behavior: 'smooth' });
-    }
-  };
-
   useEffect(() => {
     if (showList) return; // Don't animate if list view
     const scrollContainer = scrollRef.current;
@@ -152,7 +145,7 @@ function Certifications() {
         >
           {/* <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="Logo" /> */}
           <img
-            src={showList ? "icon/view-carousel-white.png" : "icon/view-list-white.png"}
+            src={showList ? `${process.env.PUBLIC_URL}/icon/view-carousel-white.png` : `${process.env.PUBLIC_URL}/icon/view-list-white.png`}
             alt={showList ? "Carousel View" : "List View"}
             className="list-btn-icon"
           />

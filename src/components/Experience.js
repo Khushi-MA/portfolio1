@@ -10,7 +10,7 @@ const Experience = ({ onPopupOpen, onPopupClose }) => {
       company: 'Haegl Technologies Pvt. Ltd., Hubballi',
       logo: `${process.env.PUBLIC_URL}/logo/logo-haegl-white.png`, // Add logo path if available, else leave empty
       location: 'Hubballi, Karnataka, India',
-      images: [`${process.env.PUBLIC_URL}/p (4).png`, `${process.env.PUBLIC_URL}/p (2).png`, `${process.env.PUBLIC_URL}/p (3).png`],
+      // images: [`${process.env.PUBLIC_URL}/p (4).png`, `${process.env.PUBLIC_URL}/p (2).png`, `${process.env.PUBLIC_URL}/p (3).png`],
       roles: [
         {
           title: 'Research Assistant',
@@ -91,23 +91,40 @@ const Experience = ({ onPopupOpen, onPopupClose }) => {
       company: 'Make in BVB (MiB)',
       logo: `${process.env.PUBLIC_URL}/logo/logo-mib-white.png`,
       location: 'KLE Technological University, Hubballi',
-      images: [`${process.env.PUBLIC_URL}/p (4).png`, `${process.env.PUBLIC_URL}/p (2).png`, `${process.env.PUBLIC_URL}/p (3).png`],
+      images: [`${process.env.PUBLIC_URL}/mib0.jpg`, `${process.env.PUBLIC_URL}/mib1.jpg`, `${process.env.PUBLIC_URL}/mib2.jpg`, `${process.env.PUBLIC_URL}/mib3.jpg`, `${process.env.PUBLIC_URL}/mib4.jpg`],
       roles: [
         {
           title: 'Student President',
           duration: 'Dec 2023 - Present · 1 yr 2 mos',
           // type: 'Full-time · Hybrid',
           oneline: 'Leading the Make in BVB club as Student President',
-          description: 'Leading club activities and managing team operations.',
+description: (
+            <>
+              <ul>
+                <li>Team Leadership: Directed a multi-functional team of 50 members, overseeing task delegation & performance tracking.</li>
+                <li>Event Lifecycle Management: Spearheaded flagship events (Like PUPA 2024) for 300+ participants, managing the entire process from planning and budgeting to successful execution.</li>
+                <li>Conflict Resolution: Developed strong interpersonal skills by resolving internal team disagreements and facilitating constructive discussions to maintain a collaborative work environment.</li>
+              </ul>
+
+              
+            </>
+          ),
           skills: ['Leadership', 'Budgeting', 'Content Writing', 'Blogging']
         },
         {
-          title: 'Content Creator',
+          title: 'Content Creator + part of Media and Publicity Team',
           duration: 'Feb 2022 - Sep 2024 · 2 yrs 8 mos',
           // type: 'Part-time',
-          oneline: 'Created content for the Make in BVB blog on Medium platform.',
-          description: 'Created content for Make in BVB blog on Medium platform.',
-          skills: ['Content Writing', 'Blogging']
+          oneline: 'Created content for the Make in BVB social media.',
+          description: (
+            <>
+              <ul>
+                <li>Worked on Club Branding: Crafting compelling narratives to increase student engagement and "hire" new members into the club culture.</li>
+                <li>Participant & Stakeholder Communication: Managed continuous engagement with participants over a three-month timeline for PUPA 2023 via WhatsApp and email, addressing queries, providing updates, and ensuring smooth coordination with staff, teachers, and other colleges</li>
+              </ul>
+            </>
+          ),
+          skills: ['Public speaking', 'Presentation', 'Content Writing', 'Blogging']
         }
       ]
     }

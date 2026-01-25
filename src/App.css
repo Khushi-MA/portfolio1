@@ -143,7 +143,7 @@ a {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin: 0%;
   /* margin-top: 1rem; */
   /* color:rgb(50, 50, 50); */
@@ -291,4 +291,10 @@ body {
 ::selection {
   background: var(--highlight-colour1); /* Custom background color */
   color: #000; /* Custom text color */
+}
+
+.section {
+    padding: 2rem; /* Ensure consistent padding */
+    margin: 0; /* Reset margin */
+    /* text-align: left; Align text to the left */
 }

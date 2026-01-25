@@ -7,32 +7,48 @@
 }
 
 .books-intro {
-  /* font-size: 1.1rem;
-  color: #555; */
   margin-bottom: 2rem;
+}
+
+.book-title {
+  font-size: 0.8rem;
+  /* font-weight: 600; */
+  /* margin: 0; */
+}
+
+.book-author {
+  font-size: 0.7rem;
+  /* color: var(--text-secondary); */
+  margin: 0;
 }
 
 .books-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  row-gap: 1rem;
-  column-gap: 1rem;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1rem;
   padding: 0rem;
   padding-bottom: 3rem;
+  align-items: stretch; /* equal-height rows */
 }
 
 .book-card {
-  /* Remove flex properties from card */
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 10px;
   margin: 0px;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: var(--unit-border);
+  /* border: var(--unit-border);
   box-shadow: var(--unit-shadow-normal);
-  background: var(--unit-background);
-  backdrop-filter: blur(10px);
+  background: var(--unit-background); */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   transform: translateY(0) scale(1);
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* fill stretched grid row */
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .book-content {
@@ -40,6 +56,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  flex: 1; /* remove vertical fill to avoid extra bottom space */
 }
 
 .book-image {
@@ -54,34 +71,16 @@
 }
 
 .book-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
   align-items: center;
-  min-height: 120px;
+  text-align: center;
+  min-height: 0; /* allow natural height; tallest card sets the row height */
   width: 100%;
   gap: 0.5rem;
-}
-
-.book-title {
-  /* font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0.5rem 0 0.2rem 0;
-  text-align: center; */
-}
-
-.book-author {
-  /* font-size: 1rem;
-  color: #888;
-  margin-bottom: 0.7rem;
-  text-align: center; */
-}
-
-.book-desc {
-  /* font-size: 0.98rem;
-  color: #444;
-  margin-bottom: 1rem;
-  text-align: center; */
+  /* min-height: 80px; */ /* optional: remove to avoid extra space on small screens */
+  /* flex: 1; remove vertical fill on mobile too */
 }
 
 .book-link {
@@ -99,7 +98,19 @@
   color: #000000;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1050px) {
+  .books-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .books-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 500px) {
   .books-list {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
@@ -115,9 +126,10 @@
     margin: 0;
   }
   .book-details {
+    /* keep mobile-specific tweaks as-is */
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 0;
     gap: 0.5rem;
     flex: 1;
   }
