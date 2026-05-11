@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './Beyond.css';
 import Socials from './Socials';
-import BooksSection from './Books';
+import Books from './Books';
 import HoverTipBox from './HoverTipBox';
 
 function Beyond() {
@@ -26,7 +26,7 @@ function Beyond() {
   return (
     <div className="beyond-page">
       <section id="books" className="section fade-in">
-        <BooksSection />
+        <Books />
       </section>
       <section id='socials'>
         <Socials />

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './Popup.css';
 
-const Popup = ({ title, subtitle, images, description, links, isOpen, onClose }) => {
+const Popup = ({ title, subtitle, images, description, links = [], isOpen, onClose }) => {
   // Prevent background scroll when popup is open
   useEffect(() => {
     if (isOpen) {
@@ -39,21 +39,22 @@ const Popup = ({ title, subtitle, images, description, links, isOpen, onClose })
         <div className="popup-inner">
           <div className="popup-details">
             <h2 className="popup-title">{title}</h2>
-            <h3 className="popup-subtitle">{subtitle}</h3>
-            <div className="popup-description">{renderDescription()}</div>
-            <div className="popup-links">
-              {links.map((link, index) => (
+                        <div className="project-list-links">
+                {links.map((link, index) => (
                 <a
                   key={index}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="popup-link"
+                  className="project-list-link"
                 >
                   {link.label}
                 </a>
               ))}
             </div>
+            {/* <h3 className="popup-subtitle">{subtitle}</h3> */}
+            <div className="popup-description">{renderDescription()}</div>
+
           </div>
           <div className="popup-images">
             {images && images.map((image, index) => (

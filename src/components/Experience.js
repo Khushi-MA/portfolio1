@@ -47,7 +47,7 @@ const Experience = ({ onPopupOpen, onPopupClose }) => {
       ]
     },
     {
-      company: 'Nature Conservation Foundation (in collaboration with Bird Count India)',
+      company: 'Nature Conservation Foundation - Bird Count India',
       logo: `${process.env.PUBLIC_URL}/logo/logo-ncf-ful-white.png`,
       location: '',
       images: [], // Add image paths if available, else leave empty
@@ -92,6 +92,12 @@ const Experience = ({ onPopupOpen, onPopupClose }) => {
       logo: `${process.env.PUBLIC_URL}/logo/logo-mib-white.png`,
       location: 'KLE Technological University, Hubballi',
       images: [`${process.env.PUBLIC_URL}/mib0.jpg`, `${process.env.PUBLIC_URL}/mib1.jpg`, `${process.env.PUBLIC_URL}/mib2.jpg`, `${process.env.PUBLIC_URL}/mib3.jpg`, `${process.env.PUBLIC_URL}/mib4.jpg`],
+      links: [
+      {
+        label: 'Click for detailed journey',        
+        url: '/makeinbvb#/makeinbvb'
+      }
+    ],
       roles: [
         {
           title: 'Student President',
@@ -153,6 +159,41 @@ description: (
                 {exp.location && <p className="experience-location">{exp.location}</p>}
               </div>
             </div>
+            <div className="project-list-links">
+              
+              
+              {exp.links?.map((link, idx) => (
+                <a
+                  key={idx}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-list-link"
+                  onClick={e => e.stopPropagation()}
+                  title={link.label}
+                >
+                  {link.label === 'GitHub Repository' ? (
+                    // <img
+                    //   src="icon/github.png"
+                    //   alt={link.label}
+                    //   className='link-image-alternate'
+                    // />
+                    <i data-feather="github" alt={link.label} className="link-image-alternate"></i>
+                  ) : link.label === 'LinkedIn Post' ? (
+                    <i data-feather="linkedin" alt={link.label} className="link-image-alternate"></i>
+
+                  ) : link.image ? (
+                    <img
+                      src={link.image}
+                      alt={link.label}
+                      className='link-image-alternate'
+                    />
+                  ) : (
+                    link.label
+                  )}
+                </a>
+              ))}
+            </div>
             <div className="experience-roles">
               {exp.roles.map((role, roleIndex) => (
                 <div key={roleIndex} className="experience-role">
@@ -183,7 +224,7 @@ description: (
               <div>{role.description}</div>
             </div>
           ))}
-          links={[]}
+          links={selectedExperience.links}
           isOpen={!!selectedExperience}
           onClose={handleClosePopup}
         />

@@ -196,8 +196,13 @@ ul {
 
 .project-list-link:hover {
   opacity: 0.9;
-  background: var(--project-link-bg-hover);
+  /* border: 1px solid var(--highlight-colour1); */
+  /* background: var(--project-link-bg-hover); */
+  background: var(--highlight-colour1);
   transform: var(--project-link-transform-hover);
+  cursor: pointer;
+  /* text-decoration: underline var(--highlight-colour1); */
+  color: black;
 }
 
 

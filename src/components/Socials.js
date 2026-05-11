@@ -25,14 +25,14 @@ const Socials = () => {
       >
         <i data-feather="github"></i>
       </a>
-      <a
+      {/* <a
         href="https://www.instagram.com/khush_alright/"
         target="_blank"
         rel="noopener noreferrer"
         title="Instagram"
       >
         <i data-feather="instagram"></i>
-      </a>
+      </a> */}
       <a
         href="https://orcid.org/0009-0000-0538-593X"
         target="_blank"

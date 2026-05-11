@@ -67,7 +67,7 @@ const bookRecommendations = [
   }
 ];
 
-function BooksSection() {
+function Books() {
   return (
     <section className="books-section">
       <h1>Books</h1>
@@ -91,4 +91,4 @@ function BooksSection() {
   );
 }
 
-export default BooksSection;
+export default Books;

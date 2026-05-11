@@ -143,7 +143,7 @@ function About() {
             I’m an eager learner working towards improving myself. I’m passionate about coding and I’m always looking for opportunities to learn new things. I’m a quick learner and
             I’m keen to explore new ideas/hobbies.<br />
             <a
-              href={`${process.env.PUBLIC_URL}/docs/Khushi M Appannavar Resume.pdf`}
+              href={`${process.env.PUBLIC_URL}/docs/Khushi_M_Appannavar_Resume.pdf`}
               download
               className="resume-download-btn highlight-colour1"
             >
