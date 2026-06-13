@@ -98,13 +98,12 @@ function Makeinbvb() {
                     </p>
                 <p>Throughout my engineering degree, MiB ran parallel to my academic journey and shaped how I learned outside the classroom. It started as a space for exposure and gradually became a place of responsibility, decision-making, and trust. Through varied experiences and interactions across batches, MiB helped me build perspective, confidence, and meaningful connections. It remains a core part of how I understand growth during my engineering years.</p>
 
-
                 <div>
                     {events.map((event, index) => (
                         <div key={index} className="makeinbvb-card">
                             <img src={event.photo} alt={event.title} className="card-photo" />
                             <div className="card-content">
-                                <h3>{event.title} - <em> <small>{event.role}</small> </em></h3>
+                                <h3>{event.role} - <em> <small>{event.title}</small> </em></h3>
                                 {/* role should be in italics */}
                                 
                                 <p>Date: {event.date}</p>
