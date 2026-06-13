@@ -1,7 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **🔗 Live Link:** [khushi-appannavar.github.io/portfolio1/](https://khushi-appannavar.github.io/portfolio1/)
 
-**Live Link:** [khushi-appannavar.github.io/portfolio1/](https://khushi-appannavar.github.io/portfolio1/)
 
+*First off, thanks for visiting the source code! I’m not sure why you’re here when you could just click the live link... but anyways... continue continue...*
+
+*Built with ❤️ and a significant amount of hair pulling. If you find a bug, kindly make a pull request and correct it for me. Kind regards!!!*
 
 
 Hey there! Welcome to the source code of my personal portfolio. This is a simple, responsive React application designed to showcase my journey as a Software Developer, Data Enthusiast, and Student Leader.
@@ -58,8 +60,5 @@ I'm always open to discussing Data Engineering, Full-Stack development, or cool 
 
 ---
 
-*Built with ❤️ and a significant amount of hair pulling. If you find a bug, kindly make a pull request and correct it for me. Kind regards!!!*
 
-
-#### Command I use to make changes
 
